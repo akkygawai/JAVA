@@ -1,0 +1,29 @@
+class OverloadDemo
+{
+    void add()
+    {
+        System.out.println("no parameter");
+    }
+    void add(int a,int b)
+    {
+        System.out.println("Sum of two numbers:"+(a+b));
+    }
+    void add(int a,int b,int c)
+    {
+        System.out.println("sum of three numbers:"+(a+b+c));
+    }
+    void add(double a,double b,double c,double d)
+    {
+        System.out.println("sum of three floating point values:"+(a+b+c));
+    }
+}
+class lab6
+{
+    public static void main(String[] args) {
+        OverloadDemo od=new OverloadDemo();
+        od.add();
+        od.add(2,7);
+        od.add(2,4,6);
+        od.add(3.4,4.5,9.8,7.7);
+    }
+}
